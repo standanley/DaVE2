@@ -12,5 +12,3 @@ cd coreir_release && sudo make install && cd ..
 #     export DYLD_LIBRARY_PATH=/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/:/usr/local/lib:$DYLD_LIBRARY_PATH
 #   fi
 
-# Install everything else
-pip install -r requirements.txt
