@@ -16,12 +16,13 @@ matrix:
     env:
     - CC=gcc-7
     - CXX=g++-7
-  - os: osx
-    osx_image: xcode10.2
-    addons:
-      homebrew:
-        packages:
-          - verilator
+# osx has a problem with python 3.7, could fix it by using conda like fault does
+#  - os: osx
+#    osx_image: xcode10.2
+#    addons:
+#      homebrew:
+#        packages:
+#          - verilator
 
 language: python
 python: 3.7
