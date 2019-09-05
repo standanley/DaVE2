@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install coreir
 curl -s -L https://github.com/rdaly525/coreir/releases/latest | grep "href.*coreir-${TRAVIS_OS_NAME}.tar.gz" | cut -d \" -f 2 | xargs -I {} wget https://github.com"{}"
 mkdir coreir_release;
