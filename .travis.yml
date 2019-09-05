@@ -1,4 +1,4 @@
-language: python: 3.7
+language: python
 
 install: ./install_dependencies.sh
 
