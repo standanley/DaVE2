@@ -31,6 +31,8 @@ install:
     - ./install_coreir.sh
     - pip install -r requirements.txt
     - pip install pytest
+    - wget http://mirrors.kernel.org/ubuntu/pool/universe/n/ngspice/ngspice_30.2-1_amd64.deb
+    - sudo dpkg -i ngspice_30.2-1_amd64
 
 script:
     - pytest
