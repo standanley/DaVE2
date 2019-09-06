@@ -32,8 +32,7 @@ install:
     - pip install -r requirements.txt
     - pip install pytest
     - wget http://mirrors.kernel.org/ubuntu/pool/universe/n/ngspice/ngspice_30.2-1_amd64.deb
-    - ls
-    - sudo dpkg -i ngspice_30.2-1_amd64.deb
+    - sudo dpkg -i ngspice_30.2-1_amd64.deb || sudo apt-get -f install
 
 script:
     - pytest
